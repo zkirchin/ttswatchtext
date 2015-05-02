@@ -1,0 +1,36 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Wip Interactive",
+    "longName": "TextWatch",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/ttspebble.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            },
+            {
+                "file": "fonts/TrendSansOne copy.ttf",
+                "name": "FONT_TREND_17",
+                "type": "font"
+            },
+            {
+                "file": "fonts/TrendSansOne.ttf",
+                "name": "FONT_TREND_20",
+                "type": "font"
+            }
+        ]
+    },
+    "sdkVersion": "2",
+    "shortName": "TextWatch",
+    "uuid": "496e04ad-132a-48ab-b165-7ff4a99872d2",
+    "versionCode": 2,
+    "versionLabel": "2.1",
+    "watchapp": {
+        "watchface": true
+    }
+}
