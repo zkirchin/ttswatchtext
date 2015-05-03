@@ -174,7 +174,7 @@ static void configureBoldLayer(TextLayer *textlayer)
 	text_layer_set_font(textlayer, boldFont);
 	text_layer_set_text_color(textlayer, GColorBlack);
 	text_layer_set_background_color(textlayer, GColorClear);
-	text_layer_set_text_alignment(textlayer, GTextAlignmentLeft);
+	text_layer_set_text_alignment(textlayer, GTextAlignmentCenter);
 }
 
 // Configure for the 2nd and 3rd lines
@@ -183,7 +183,7 @@ static void configureLightLayer(TextLayer *textlayer)
 	text_layer_set_font(textlayer, lightFont);
 	text_layer_set_text_color(textlayer, GColorBlack);
 	text_layer_set_background_color(textlayer, GColorClear);
-	text_layer_set_text_alignment(textlayer, GTextAlignmentLeft);
+	text_layer_set_text_alignment(textlayer, GTextAlignmentCenter);
 }
 
 // Time handler called every minute by the system
@@ -198,8 +198,8 @@ static void init() {
   window_set_background_color(window, GColorWhite);
 
 	// Custom fonts
-	lightFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TREND_17));
-	boldFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TREND_20));
+	lightFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TREND_19));
+	boldFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TREND_19));
   
   //   lightFont = fonts_get_system_font(FONT_KEY_GOTHIC_24);
   //   boldFont = fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD);
@@ -213,20 +213,20 @@ static void init() {
 
 
 	// 1st line layers
-	line1.currentLayer = text_layer_create(GRect(31, 37, 84, 50));
-	line1.nextLayer = text_layer_create(GRect(0, 37, 84, 50));
+	line1.currentLayer = text_layer_create(GRect(26, 37, 95, 50));
+	line1.nextLayer = text_layer_create(GRect(0, 37, 95, 50));
 	configureBoldLayer(line1.currentLayer);
 	configureBoldLayer(line1.nextLayer);
 
 	// 2nd layers
-	line2.currentLayer = text_layer_create(GRect(31, 63, 84, 50));
-	line2.nextLayer = text_layer_create(GRect(0, 63, 84, 50));
+	line2.currentLayer = text_layer_create(GRect(26, 61, 95, 50));
+	line2.nextLayer = text_layer_create(GRect(0, 61, 95, 50));
 	configureLightLayer(line2.currentLayer);
 	configureLightLayer(line2.nextLayer);
 
 	// 3rd layers
-	line3.currentLayer = text_layer_create(GRect(31, 86, 84, 50));
-	line3.nextLayer = text_layer_create(GRect(0, 86, 84, 50));
+	line3.currentLayer = text_layer_create(GRect(26, 86, 95, 50));
+	line3.nextLayer = text_layer_create(GRect(0, 86, 95, 50));
 	configureLightLayer(line3.currentLayer);
 	configureLightLayer(line3.nextLayer);
 
