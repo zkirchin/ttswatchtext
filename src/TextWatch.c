@@ -172,7 +172,7 @@ static void click_config_provider(ClickRecognizerRef recognizer, void *context) 
 static void configureBoldLayer(TextLayer *textlayer)
 {
 	text_layer_set_font(textlayer, boldFont);
-	text_layer_set_text_color(textlayer, GColorBlack);
+	text_layer_set_text_color(textlayer, GColorWhite);
 	text_layer_set_background_color(textlayer, GColorClear);
 	text_layer_set_text_alignment(textlayer, GTextAlignmentCenter);
 }
@@ -181,7 +181,7 @@ static void configureBoldLayer(TextLayer *textlayer)
 static void configureLightLayer(TextLayer *textlayer)
 {
 	text_layer_set_font(textlayer, lightFont);
-	text_layer_set_text_color(textlayer, GColorBlack);
+	text_layer_set_text_color(textlayer, GColorWhite);
 	text_layer_set_background_color(textlayer, GColorClear);
 	text_layer_set_text_alignment(textlayer, GTextAlignmentCenter);
 }

@@ -9,7 +9,7 @@
     "resources": {
         "media": [
             {
-                "file": "images/ttspebble.png",
+                "file": "images/ttspebbleblack.png",
                 "name": "IMAGE_BACKGROUND",
                 "type": "png"
             },
@@ -27,9 +27,9 @@
     },
     "sdkVersion": "2",
     "shortName": "TTS Clock",
-    "uuid": "496e04ad-132a-48ab-b165-7ff4a99872d2",
+    "uuid": "6d3cfa54-ae67-4c5c-8861-c310c5e7d401",
     "versionCode": 2,
-    "versionLabel": "1.0",
+    "versionLabel": "1.1",
     "watchapp": {
         "watchface": true
     }
